@@ -1,0 +1,10 @@
+
+POST http://127.0.0.1:8080/SetPostcomment HTTP/1.1
+content-type: application/json
+
+{
+    "author": "dadaswdas",
+    "email": "232843@qq.com",
+    "comment": "市场不断将保持多久火炬红包计划计划吧",
+    "postid": "3990441"
+}

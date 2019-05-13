@@ -1,0 +1,28 @@
+.nav-bar-menu {
+    width: @100;
+    height: 40px;
+    background: @whiteColor;
+    overflow-x: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    .scroll {
+        height: @100;
+        width: 123%;
+        ul {
+            display: flex;
+            height: @100;
+            justify-content: space-around;
+            align-items: center;
+            a {
+                color: @black;
+            }
+        }
+    }
+    .router-link-active {
+        color: @active-color !important;
+        font-weight: bolder;
+    }
+    .border(#e3e3e3,bottom)
+}

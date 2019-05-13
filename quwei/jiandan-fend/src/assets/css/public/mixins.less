@@ -1,0 +1,28 @@
+// 移动端1像素，公共方法
+.border(@color,@position) {
+    & when (@position = top) {
+        &:before {
+            .lines(@color)
+        }
+    }
+    & when (@position = bottom) {
+        &:after {
+            .lines(@color)
+        }
+    }
+}
+
+// 封装画一条真正1px线
+.lines(@color) {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: @color;
+    transform: scaleY(0.5);
+    position: absolute;
+    left: 0;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
